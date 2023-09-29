@@ -1,0 +1,15 @@
+.uiList li {
+    border: 1px solid #d9e2ee;
+    background-color: #eff3f9;
+    border-radius: 8px;
+    padding: 10px 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    color: #466286;
+}

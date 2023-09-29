@@ -1,0 +1,130 @@
+.invoices__searchbar .btn {
+    position: absolute !important;
+    padding: 5px 17px;
+    margin-left: -83px;
+    margin-top: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.invoices__searchbar .btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.invoices__searchbar .btn svg path {
+    fill: #fff;
+}
+
+.invoices__searchbar input {
+    display: inline;
+}
+
+.invoices__table-block {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #d9e2ee;
+    box-shadow: -9px 10px 0px 0px #d9e2ee;
+    padding: 22px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #617691;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+}
+
+.invoices__table-block:hover,
+.invoices__table-block.active {
+    transform: scale(1.01);
+    color: #11253E;
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+
+
+.invoices__searchbar .btn svg {
+    height: 10px;
+    width: 10px;
+    display: inline;
+    margin-right: 20px;
+}
+
+.invoices__table-block svg {
+    height: 20px;
+}
+
+.block__title span {
+    color: #617691;
+    padding: 0 20px 0 0;
+}
+
+.block__status {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.addLineBtn {
+    padding: 3px 5px;
+    display: block;
+    cursor: pointer;
+}
+
+.invoice__sheet .action {
+    display: none;
+}
+
+.invoice__sheet:hover .action {
+    display: flex;
+}
+
+
+.invoice__sheet div[contenteditable=true] {
+    border-bottom: 1px solid #d3e5f1;
+    border-right: 1px solid #d3e5f1;
+    outline: none;
+    overflow: auto;
+    max-height: 50px;
+    white-space: pre;
+}
+
+.invoice__sheet div[contenteditable=true]:last-child,
+.invoice__sheet div.subtotal {
+    border-right: none;
+}
+
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block;
+    opacity: .5;
+    /* For Firefox */
+}
+
+/* */
+
+div[contenteditable=true] {
+    color: #617691;
+    padding: 10px 15px;
+}
+
+@media screen and (max-width:500px) {
+    .invoice__sheet .action {
+        position: absolute;
+        margin-left: -80px;
+    }
+
+}
